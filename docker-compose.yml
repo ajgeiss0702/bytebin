@@ -15,7 +15,7 @@ services:
       # environment variables.
       BYTEBIN_CONTENT_MAXSIZE: 500
       BYTEBIN_CONTENT_EXPIRY: 43200
-      BYTEBIN_METRICS_ENABLED: false
+      BYTEBIN_METRICS_ENABLED: "false"
       BYTEBIN_CACHE_MAXSIZE: 200
 
 
