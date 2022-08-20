@@ -13,8 +13,11 @@ services:
     environment:
       # You can configure bytebin using
       # environment variables.
-      BYTEBIN_MISC_KEYLENGTH: 15
-      BYTEBIN_CONTENT_MAXSIZE: 5
+      BYTEBIN_CONTENT_MAXSIZE: 500
+      BYTEBIN_CONTENT_EXPIRY: 43200
+      BYTEBIN_METRICS_ENABLED: false
+      BYTEBIN_CACHE_MAXSIZE: 200
+
 
 volumes:
   data: {}
