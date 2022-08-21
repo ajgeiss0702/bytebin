@@ -39,6 +39,7 @@ ENV PATH "${JAVA_HOME}/bin:${PATH}"
 COPY --from=build /jre $JAVA_HOME
 
 RUN addgroup -S bytebin && adduser -S -G bytebin bytebin
+RUN mkdir /opt/bytebin
 RUN chown -R bytebin /opt/bytebin
 USER bytebin
 
